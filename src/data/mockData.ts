@@ -10,10 +10,27 @@ import {
 } from '../types';
 
 export const initialUsers: User[] = [
-  { id: 'usr_1', email: 'jean.dupont@mindcare.fr', role: 'doctor', createdAt: '2026-01-01' },
-  { id: 'usr_2', email: 'marie.curie@mindcare.fr', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_1', email: 'jean.dupont@docpat.fr', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_2', email: 'marie.curie@docpat.fr', role: 'doctor', createdAt: '2026-01-01' },
   { id: 'usr_3', email: 'alice.morel@email.com', role: 'patient', createdAt: '2026-02-10' },
   { id: 'usr_4', email: 'thomas.bernard@email.com', role: 'patient', createdAt: '2026-03-15' },
+
+  // Comptes des médecins camerounais
+  { id: 'usr_5', email: 'nadege.tchamba@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_6', email: 'emmanuel.mbarga@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_7', email: 'aicha.bouba@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_8', email: 'paulhenri.nkoulou@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_9', email: 'laurentine.fotso@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_10', email: 'christian.essomba@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_11', email: 'blessing.ngwa@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_12', email: 'serge.kamga@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_13', email: 'marieclaire.ateba@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_14', email: 'rosine.mballa@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_15', email: 'alain.tagne@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_16', email: 'flora.ndzana@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_17', email: 'ibrahim.moussa@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_18', email: 'sylvie.kenmogne@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
+  { id: 'usr_19', email: 'patrick.njoya@docpat.cm', role: 'doctor', createdAt: '2026-01-01' },
 ];
 
 export const initialSpecialties: Specialty[] = [
@@ -22,6 +39,7 @@ export const initialSpecialties: Specialty[] = [
   { id: 'spec_3', name: 'Pédiatrie' },
   { id: 'spec_4', name: 'Dermatologie' },
   { id: 'spec_5', name: 'Ophtalmologie' },
+  { id: 'spec_6', name: 'Psychologie & Psychiatrie' },
 ];
 
 export const initialDoctors: Doctor[] = [
@@ -32,11 +50,11 @@ export const initialDoctors: Doctor[] = [
     lastName: 'Dupont',
     specialtyId: 'spec_1',
     phone: '01 42 68 00 01',
-    city: 'Paris',
+    city: 'DOUALA',
     clinicName: 'Clinique Pasteur Paris',
     bio: 'Médecin généraliste avec 15 ans d’expérience en suivi personnalisé des familles.',
     isAvailable: true,
-    avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80',
+    avatar: '/download (11).jpeg',
   },
   {
     id: 'doc_2',
@@ -45,11 +63,214 @@ export const initialDoctors: Doctor[] = [
     lastName: 'Curie',
     specialtyId: 'spec_2',
     phone: '04 78 92 11 22',
-    city: 'Lyon',
+    city: 'YAOUNDE',
     clinicName: 'Centre de Cardiologie de Lyon',
     bio: 'Spécialiste en cardiologie préventive et suivi d’insuffisances cardiaques.',
     isAvailable: true,
-    avatar: 'https://images.unsplash.com/photo-1594824813566-7885a39644d6?w=150&auto=format&fit=crop&q=80',
+    avatar: '/download (13).jpeg',
+  },
+
+  // ── Médecins du Cameroun ──
+  {
+    id: 'doc_3',
+    userId: 'usr_5',
+    firstName: 'Nadège',
+    lastName: 'Tchamba',
+    specialtyId: 'spec_1',
+    phone: '+237 6 70 00 00 01',
+    city: 'Douala',
+    clinicName: 'Clinique Docpat Douala',
+    bio: 'Médecin généraliste senior, plus de 15 ans de pratique clinique.',
+    isAvailable: true,
+    avatar: '/Women_of_Strength_️__Ambassadors_of_Hope-removebg-preview.png',
+  },
+  {
+    id: 'doc_4',
+    userId: 'usr_6',
+    firstName: 'Emmanuel',
+    lastName: 'Mbarga',
+    specialtyId: 'spec_6',
+    phone: '+237 6 71 00 00 02',
+    city: 'Yaoundé',
+    clinicName: 'Centre Docpat Yaoundé',
+    bio: 'Psychologue clinicien spécialisé dans la gestion du stress.',
+    isAvailable: true,
+    avatar: '/download (12).jpeg',
+  },
+  {
+    id: 'doc_5',
+    userId: 'usr_7',
+    firstName: 'Aïcha',
+    lastName: 'Bouba',
+    specialtyId: 'spec_6',
+    phone: '+237 6 72 00 00 03',
+    city: 'Garoua',
+    clinicName: 'Centre Docpat Garoua',
+    bio: "Psychiatre, spécialiste des troubles anxieux et de l'humeur.",
+    isAvailable: true,
+    avatar: '/download.jpeg',
+  },
+  {
+    id: 'doc_6',
+    userId: 'usr_8',
+    firstName: 'Paul-Henri',
+    lastName: 'Nkoulou',
+    specialtyId: 'spec_1',
+    phone: '+237 6 73 00 00 04',
+    city: 'Bafoussam',
+    clinicName: 'Clinique Docpat Bafoussam',
+    bio: "Médecin généraliste avec 20 ans d'expérience clinique.",
+    isAvailable: true,
+    avatar: '/15.jpeg',
+  },
+  {
+    id: 'doc_7',
+    userId: 'usr_9',
+    firstName: 'Laurentine',
+    lastName: 'Fotso',
+    specialtyId: 'spec_2',
+    phone: '+237 6 74 00 00 05',
+    city: 'Douala',
+    clinicName: 'Clinique Docpat Douala',
+    bio: 'Cardiologue, suivi préventif et réhabilitation cardiaque.',
+    isAvailable: true,
+    avatar: '/12.jpeg',
+  },
+  {
+    id: 'doc_8',
+    userId: 'usr_10',
+    firstName: 'Christian',
+    lastName: 'Essomba',
+    specialtyId: 'spec_1',
+    phone: '+237 6 75 00 00 06',
+    city: 'Limbé',
+    clinicName: 'Centre Docpat Limbé',
+    bio: 'Médecin généraliste, médecine familiale et suivi pédiatrique.',
+    isAvailable: true,
+    avatar: '/00.jpeg',
+  },
+  {
+    id: 'doc_9',
+    userId: 'usr_11',
+    firstName: 'Blessing',
+    lastName: 'Ngwa',
+    specialtyId: 'spec_6',
+    phone: '+237 6 76 00 00 07',
+    city: 'Bamenda',
+    clinicName: 'Centre Docpat Bamenda',
+    bio: 'Thérapeute comportementale et cognitive (TCC).',
+    isAvailable: true,
+    avatar: '/Home (6_29).jpeg',
+  },
+  {
+    id: 'doc_10',
+    userId: 'usr_12',
+    firstName: 'Serge',
+    lastName: 'Kamga',
+    specialtyId: 'spec_2',
+    phone: '+237 6 77 00 00 08',
+    city: 'Yaoundé',
+    clinicName: 'Centre Docpat Yaoundé',
+    bio: 'Spécialiste en cardiologie interventionnelle.',
+    isAvailable: true,
+    avatar: '',
+  },
+  {
+    id: 'doc_11',
+    userId: 'usr_13',
+    firstName: 'Marie-Claire',
+    lastName: 'Ateba',
+    specialtyId: 'spec_6',
+    phone: '+237 6 78 00 00 09',
+    city: 'Ebolowa',
+    clinicName: 'Centre Docpat Ebolowa',
+    bio: 'Psychologue, accompagnement des adolescents et des familles.',
+    isAvailable: true,
+    avatar: '',
+  },
+
+  // ── Pédiatrie ──
+  {
+    id: 'doc_12',
+    userId: 'usr_14',
+    firstName: 'Rosine',
+    lastName: 'Mballa',
+    specialtyId: 'spec_3',
+    phone: '+237 6 79 00 00 10',
+    city: 'Yaoundé',
+    clinicName: 'Centre Docpat Yaoundé',
+    bio: 'Pédiatre, suivi de la croissance et vaccination des enfants, plus de 12 ans d’expérience.',
+    isAvailable: true,
+    avatar: '',
+  },
+  {
+    id: 'doc_13',
+    userId: 'usr_15',
+    firstName: 'Alain',
+    lastName: 'Tagne',
+    specialtyId: 'spec_3',
+    phone: '+237 6 80 00 00 11',
+    city: 'Douala',
+    clinicName: 'Clinique Docpat Douala',
+    bio: 'Pédiatre néonatologue, plus de 10 ans d’expérience auprès des nouveau-nés.',
+    isAvailable: true,
+    avatar: '',
+  },
+
+  // ── Dermatologie ──
+  {
+    id: 'doc_14',
+    userId: 'usr_16',
+    firstName: 'Flora',
+    lastName: 'Ndzana',
+    specialtyId: 'spec_4',
+    phone: '+237 6 81 00 00 12',
+    city: 'Douala',
+    clinicName: 'Clinique Docpat Douala',
+    bio: 'Dermatologue, acné, eczéma et soins de la peau, 14 ans d’expérience.',
+    isAvailable: true,
+    avatar: '',
+  },
+  {
+    id: 'doc_15',
+    userId: 'usr_17',
+    firstName: 'Ibrahim',
+    lastName: 'Moussa',
+    specialtyId: 'spec_4',
+    phone: '+237 6 82 00 00 13',
+    city: 'Maroua',
+    clinicName: 'Centre Docpat Maroua',
+    bio: 'Dermatologue, maladies de la peau et allergies cutanées, plus de 10 ans d’expérience.',
+    isAvailable: true,
+    avatar: '',
+  },
+
+  // ── Ophtalmologie ──
+  {
+    id: 'doc_16',
+    userId: 'usr_18',
+    firstName: 'Sylvie',
+    lastName: 'Kenmogne',
+    specialtyId: 'spec_5',
+    phone: '+237 6 83 00 00 14',
+    city: 'Yaoundé',
+    clinicName: 'Centre Docpat Yaoundé',
+    bio: 'Ophtalmologue, chirurgie de la cataracte et suivi de la vue, 16 ans d’expérience.',
+    isAvailable: true,
+    avatar: '',
+  },
+  {
+    id: 'doc_17',
+    userId: 'usr_19',
+    firstName: 'Patrick',
+    lastName: 'Njoya',
+    specialtyId: 'spec_5',
+    phone: '+237 6 84 00 00 15',
+    city: 'Bertoua',
+    clinicName: 'Centre Docpat Bertoua',
+    bio: 'Ophtalmologue, glaucome et rétinopathie diabétique, 11 ans d’expérience.',
+    isAvailable: true,
+    avatar: '',
   },
 ];
 
@@ -76,10 +297,33 @@ export const initialPatients: Patient[] = [
   },
 ];
 
+// Créneaux de démonstration : chaque médecin est disponible du 21 au 25 septembre 2026
+const SLOT_DAYS = ['2026-09-21', '2026-09-22', '2026-09-23', '2026-09-24', '2026-09-25'];
+const SLOT_HOURS: [string, string][] = [
+  ['09:00', '09:30'],
+  ['10:30', '11:00'],
+  ['14:00', '14:30'],
+  ['15:30', '16:00'],
+];
+
+const generatedTimeSlots: TimeSlot[] = initialDoctors.flatMap((doc) =>
+  SLOT_DAYS.flatMap((date) =>
+    SLOT_HOURS.map(([startTime, endTime]) => ({
+      id: `slot_${doc.id}_${date}_${startTime.replace(':', '')}`,
+      doctorId: doc.id,
+      date,
+      startTime,
+      endTime,
+      isAvailable: true,
+    }))
+  )
+);
+
 export const initialTimeSlots: TimeSlot[] = [
   { id: 'slot_1', doctorId: 'doc_1', date: '2026-09-20', startTime: '09:00', endTime: '09:30', isAvailable: true },
   { id: 'slot_2', doctorId: 'doc_1', date: '2026-09-20', startTime: '10:00', endTime: '10:30', isAvailable: true },
   { id: 'slot_3', doctorId: 'doc_1', date: '2026-09-20', startTime: '14:00', endTime: '14:30', isAvailable: true },
+  ...generatedTimeSlots,
 ];
 
 export const initialAppointments: Appointment[] = [];

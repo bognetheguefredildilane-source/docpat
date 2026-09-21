@@ -47,7 +47,7 @@ export const PatientFileModal: React.FC<PatientFileModalProps> = ({
               {patient.age} • {patient.city}
             </p>
             <p className="text-xs text-slate-500">
-              📞 {patient.phone}
+               {patient.phone}
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export const PatientFileModal: React.FC<PatientFileModalProps> = ({
             onClick={onAddNotePrompt}
             className="flex-1 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition-colors"
           >
-            + Ajouter une note
+             Ajouter une note
           </button>
           <button
             onClick={onClose}

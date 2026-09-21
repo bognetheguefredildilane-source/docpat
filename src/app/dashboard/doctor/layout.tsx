@@ -28,7 +28,7 @@ export default function DoctorLayout({
           >
             <Menu className="w-6 h-6" />
           </button>
-          <span className="font-bold text-teal-700">MindCare</span>
+          <span className="font-bold text-teal-700">Docpat</span>
         </header>
 
         <div className="p-4 sm:p-6 lg:p-8 space-y-6 max-w-7xl w-full mx-auto">

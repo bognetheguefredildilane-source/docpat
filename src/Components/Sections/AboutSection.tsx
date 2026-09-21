@@ -32,10 +32,10 @@ export const AboutSection: React.FC = () => {
                 À propos de nous
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3">
-                À Propos de Notre Centre <span className="text-teal-600">MindCare</span>
+                À Propos de Notre Centre <span className="text-teal-600">Docpat</span>
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-3 font-medium">
-                Basé à Douala, MindCare est une plateforme médicale moderne dédiée à faciliter l'accès aux soins de santé et au suivi psychologique au Cameroun. Nous connectons les patients avec des spécialistes qualifiés pour un accompagnement rapide et personnalisé.
+                Basé à Douala, Docpat est une plateforme médicale moderne dédiée à faciliter l'accès aux soins de santé et au suivi psychologique au Cameroun. Nous connectons les patients avec des spécialistes qualifiés pour un accompagnement rapide et personnalisé.
               </p>
               <p className="text-slate-500 text-xs sm:text-sm leading-relaxed mt-2">
                 Que ce soit pour une prise de rendez-vous en cabinet ou une téléconsultation, notre mission est de vous offrir des soins attentifs, confidentiels et adaptés à vos besoins quotidiens.

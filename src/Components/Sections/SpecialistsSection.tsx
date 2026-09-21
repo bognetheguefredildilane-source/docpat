@@ -42,14 +42,14 @@ export const SpecialistsSection: React.FC = () => {
 
   const demoExtras = [
     { id: 'demo_1', firstName: 'Robert', lastName: 'Wilson', specialtyId: 'spec_1', bio: 'Médecin généraliste senior, plus de 15 ans de pratique clinique.', avatar: '/Women_of_Strength_️__Ambassadors_of_Hope-removebg-preview.png' },
-    { id: 'demo_2', firstName: 'Emily', lastName: 'Davis', specialtyId: 'spec_2', bio: 'Psychologue clinicienne spécialisée dans la gestion du stress.', avatar: '' },
-    { id: 'demo_3', firstName: 'Sarah', lastName: 'Parker', specialtyId: 'spec_2', bio: "Psychiatre, spécialiste des troubles anxieux et de l'humeur.", avatar: '' },
-    { id: 'demo_4', firstName: 'Michael', lastName: 'Anderson', specialtyId: 'spec_1', bio: "Professeur certifié avec 20 ans d'expérience clinique.", avatar: '' },
-    { id: 'demo_5', firstName: 'Laura', lastName: 'Bennett', specialtyId: 'spec_3', bio: 'Cardiologue, suivi préventif et réhabilitation cardiaque.', avatar: '' },
-    { id: 'demo_6', firstName: 'David', lastName: 'Kim', specialtyId: 'spec_1', bio: 'Médecin généraliste, médecine familiale et suivi pédiatrique.', avatar: '' },
-    { id: 'demo_7', firstName: 'Nadia', lastName: 'Haddad', specialtyId: 'spec_2', bio: 'Thérapeute comportementale et cognitive (TCC).', avatar: '' },
-    { id: 'demo_8', firstName: 'Thomas', lastName: 'Novak', specialtyId: 'spec_3', bio: 'Spécialiste en cardiologie interventionnelle.', avatar: '' },
-    { id: 'demo_9', firstName: 'Amara', lastName: 'Okafor', specialtyId: 'spec_2', bio: 'Psychologue, accompagnement des adolescents et des familles.', avatar: '' },
+    { id: 'demo_2', firstName: 'Emily', lastName: 'Davis', specialtyId: 'spec_2', bio: 'Psychologue clinicienne spécialisée dans la gestion du stress.', avatar: '/download (13).jpeg' },
+    { id: 'demo_3', firstName: 'Sarah', lastName: 'Parker', specialtyId: 'spec_2', bio: "Psychiatre, spécialiste des troubles anxieux et de l'humeur.", avatar: '/download.jpeg' },
+    { id: 'demo_4', firstName: 'Michael', lastName: 'Anderson', specialtyId: 'spec_1', bio: "Professeur certifié avec 20 ans d'expérience clinique.", avatar: '/download (11).jpeg' },
+    { id: 'demo_5', firstName: 'Laura', lastName: 'Bennett', specialtyId: 'spec_3', bio: 'Cardiologue, suivi préventif et réhabilitation cardiaque.', avatar: '/12.jpeg' },
+    { id: 'demo_6', firstName: 'David', lastName: 'Kim', specialtyId: 'spec_1', bio: 'Médecin généraliste, médecine familiale et suivi pédiatrique.', avatar: '/00.jpeg' },
+    { id: 'demo_7', firstName: 'Nadia', lastName: 'Haddad', specialtyId: 'spec_2', bio: 'Thérapeute comportementale et cognitive (TCC).', avatar: '/Home (6_29).jpeg' },
+    { id: 'demo_8', firstName: 'Thomas', lastName: 'Novak', specialtyId: 'spec_3', bio: 'Spécialiste en cardiologie interventionnelle.', avatar: '/15.jpeg' },
+    { id: 'demo_9', firstName: 'Amara', lastName: 'Okafor', specialtyId: 'spec_2', bio: 'Psychologue, accompagnement des adolescents et des familles.', avatar: '/13.jpeg' },
   ];
 
   const allDoctors = [...doctors, ...demoExtras].slice(0, 10);

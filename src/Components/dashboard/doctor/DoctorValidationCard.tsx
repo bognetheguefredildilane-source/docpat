@@ -12,7 +12,7 @@ export const DoctorValidationCard: React.FC = () => {
             Validation du Profil Partenaire
           </h3>
           <p className="text-xs text-slate-500 mt-0.5">
-            Statut de vérification de votre compte professionnel MindCare.
+            Statut de vérification de votre compte professionnel Docpat.
           </p>
         </div>
         <span className="text-xs font-bold text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
@@ -33,7 +33,7 @@ export const DoctorValidationCard: React.FC = () => {
           <CheckCircle className="w-5 h-5 text-emerald-600 shrink-0" />
           <div>
             <p className="text-xs font-bold text-slate-900">Vérification du diplôme</p>
-            <p className="text-[10px] text-slate-500">Document validé par MindCare</p>
+            <p className="text-[10px] text-slate-500">Document validé par Docpat</p>
           </div>
         </div>
 

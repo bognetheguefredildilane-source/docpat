@@ -42,12 +42,13 @@ export const DoctorSidebar: React.FC<DoctorSidebarProps> = ({ isOpen, onClose })
           {/* Logo & Bouton Fermer sur Mobile */}
           <div className="flex items-center justify-between mb-8 px-2 pt-2">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-xl bg-white text-teal-700 flex items-center justify-center font-black text-lg">
-                +
-              </div>
-              <span className="text-lg font-bold">MindCare</span>
+               <div className="w-9 h-9 rounded-2xl bg-teal-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              ✚
             </div>
-            
+            <span className="text-xl font-extrabold tracking-tight">
+              Doc<span className="text-teal-400">pat</span>
+            </span>
+            </div>
             {/* Bouton de fermeture mobile */}
             <button
               onClick={onClose}

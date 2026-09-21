@@ -44,10 +44,10 @@ export default function DoctorProfilePage() {
   const [profileForm, setProfileForm] = useState({
     firstName: activeDoctor?.firstName || 'Sarah',
     lastName: activeDoctor?.lastName || 'Mbarga',
-    email: currentUser?.email || 'sarah.mbarga@mindcare.cm',
+    email: currentUser?.email || 'sarah.mbarga@docpat.cm',
     phone: activeDoctor?.phone || '+237 6 98 76 54 32',
     city: activeDoctor?.city || 'Douala',
-    clinicName: activeDoctor?.clinicName || 'Cabinet MindCare (Akwa)',
+    clinicName: activeDoctor?.clinicName || 'Cabinet Docpat (Akwa)',
     specialtyId: activeDoctor?.specialtyId || 'spec_1',
     medicalOrderNo: 'N° 4892-CM',
     consultationFee: '15 000 FCFA',

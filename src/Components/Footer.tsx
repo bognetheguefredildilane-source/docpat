@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
                 ✚
               </div>
               <span className="text-2xl font-extrabold">
-                Mind<span className="text-teal-400">Care</span>
+                Doc<span className="text-teal-400">pat</span>
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
         {/* Bas du footer */}
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-xs">
-            © {new Date().getFullYear()} MindCare. Tous droits réservés.
+            © {new Date().getFullYear()} Docpat. Tous droits réservés.
           </p>
           <p className="text-slate-600 text-xs flex items-center gap-1">
             Conçu avec <Heart className="w-3 h-3 text-rose-500 fill-rose-500" /> pour votre santé

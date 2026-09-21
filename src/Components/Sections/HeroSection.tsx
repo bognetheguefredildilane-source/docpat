@@ -13,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuth }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* ── GAUCHE : Textes & Actions MindCare ── */}
+          {/* ── GAUCHE : Textes & Actions Docpat ── */}
           <div className="space-y-6 text-left">
             <div className="inline-flex items-center space-x-2 bg-teal-100/80 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">
               <span>Plateforme de santé & téléconsultation</span>
@@ -26,7 +26,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuth }) => {
             </h1>
 
             <p className="text-slate-600 text-sm sm:text-base max-w-md leading-relaxed font-medium">
-              Votre santé mentale et physique représente votre bien le plus précieux. MindCare vous connecte rapidement avec des professionnels qualifiés en toute confidentialité.
+              Votre santé mentale et physique représente votre bien le plus précieux. Docpat vous connecte rapidement avec des professionnels qualifiés en toute confidentialité.
             </p>
 
             <div className="space-y-3 pt-2 max-w-xs sm:max-w-sm">
@@ -40,14 +40,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuth }) => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
 
-              {/* Bouton Contact direct */}
-              <a
-                href="tel:+237600000000"
-                className="w-full bg-white border-2 border-teal-600/30 hover:border-teal-600 text-teal-700 font-bold py-3 px-6 rounded-full transition-all flex items-center justify-center space-x-2 text-sm shadow-sm"
-              >
-                <Phone className="w-4 h-4 text-teal-600" />
-                <span>+237 6 00 00 00 00</span>
-              </a>
+    
             </div>
           </div>
 
@@ -56,7 +49,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuth }) => {
             <div className="absolute bottom-0 w-[280px] sm:w-[360px] h-[340px] sm:h-[420px] bg-teal-100/70 rounded-t-full -z-0" />
             <img
               src="/download__8_-removebg-preview.png"
-              alt="Docteur MindCare"
+              alt="Docteur Docpat"
               className="relative z-10 w-[280px] sm:w-[440px] object-contain drop-shadow-xl"
             />
           </div>

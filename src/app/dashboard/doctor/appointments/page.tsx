@@ -125,7 +125,7 @@ export default function DoctorAppointmentsPage() {
         const slot = timeSlots.find((s) => s.id === apt.slotId);
         const patient = patients.find((p) => p.id === apt.patientId);
 
-        const patientName = patient ? `${patient.firstName} ${patient.lastName}` : 'Patient MindCare';
+        const patientName = patient ? `${patient.firstName} ${patient.lastName}` : 'Patient Docpat';
         const initials = patient ? `${patient.firstName.charAt(0)}${patient.lastName.charAt(0)}` : 'P';
 
         let uiStatus: 'pending' | 'accepted' | 'reprogram' = 'pending';
@@ -266,7 +266,7 @@ export default function DoctorAppointmentsPage() {
         phone: item.phone,
         city: item.city,
         age: '34 ans',
-        antecedents: 'Aucun antécédent médical lourd répertorié. Suivi régulier sur MindCare.',
+        antecedents: 'Aucun antécédent médical lourd répertorié. Suivi régulier sur Docpat.',
         notes: item.notes || ['Consultez l\'historique des séances.'],
       },
     });

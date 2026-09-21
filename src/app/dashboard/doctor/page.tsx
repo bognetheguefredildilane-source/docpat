@@ -75,7 +75,7 @@ export default function DoctorDashboardPage() {
         const slot = timeSlots.find((s) => s.id === apt.slotId);
         const patient = patients.find((p) => p.id === apt.patientId);
 
-        const patientName = patient ? `${patient.firstName} ${patient.lastName}` : 'Patient MindCare';
+        const patientName = patient ? `${patient.firstName} ${patient.lastName}` : 'Patient Docpat';
         const initials = patient ? `${patient.firstName.charAt(0)}${patient.lastName.charAt(0)}` : 'P';
         const mappedStatus: TodayAppointment['status'] =
           apt.status === 'confirmed' ? 'confirmed' : 'pending';
