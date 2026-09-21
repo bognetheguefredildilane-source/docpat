@@ -25,7 +25,7 @@ export const NotificationCenter: React.FC = () => {
       >
         <Bell className="w-5 h-5" />
         {unreadCount > 0 && (
-          <span className="absolute -top-1 -right-1 w-5 h-5 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-bounce shadow-md">
+          <span className="absolute -top-1 -right-1 w-5 h-5 bg-rose-300 text-white text-[10px] font-bold rounded-full flex items-center justify-center  shadow-md">
             {unreadCount}
           </span>
         )}
@@ -52,13 +52,13 @@ export const NotificationCenter: React.FC = () => {
                   key={notif.id}
                   onClick={() => markNotificationAsRead(notif.id)}
                   className={`p-3 rounded-xl cursor-pointer text-xs my-1 ${
-                    notif.isRead ? 'bg-slate-50 text-slate-500' : 'bg-teal-50/70 text-slate-800 font-medium'
+                    notif.isRead ? 'bg-slate-50 text-slate-500' : 'bg-teal-50/70 text-slate-800 '
                   }`}
                 >
                   <div className="flex justify-between font-semibold mb-1">
                     <span>{notif.title}</span>
                     <span className="text-[10px] text-slate-400">
-                      {new Date(notif.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                      {new Date(notif.createdAt).toLocaleTimeString([], )}
                     </span>
                   </div>
                   <p className="text-slate-600">{notif.message}</p>

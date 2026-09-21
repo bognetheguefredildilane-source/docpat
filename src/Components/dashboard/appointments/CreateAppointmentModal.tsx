@@ -75,7 +75,7 @@ export const CreateAppointmentModal: React.FC<CreateAppointmentModalProps> = ({
 
           <div>
             <label className="block text-xs font-bold text-slate-700 mb-1">
-              Téléphone du patient *
+              Téléphone du patient 
             </label>
             <input
               type="tel"
@@ -89,7 +89,7 @@ export const CreateAppointmentModal: React.FC<CreateAppointmentModalProps> = ({
 
           <div className="grid grid-cols-2 gap-2.5">
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Date *</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Date </label>
               <input
                 type="date"
                 value={addForm.date}
@@ -99,7 +99,7 @@ export const CreateAppointmentModal: React.FC<CreateAppointmentModalProps> = ({
               />
             </div>
             <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Heure *</label>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Heure </label>
               <input
                 type="time"
                 value={addForm.time}

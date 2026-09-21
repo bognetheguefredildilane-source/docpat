@@ -51,7 +51,7 @@ export const ServicesSection: React.FC = () => {
           <div className="w-full md:w-1/2 flex justify-center items-end min-h-[360px] sm:min-h-[420px] relative">
             <div className="absolute bottom-0 w-[260px] sm:w-[320px] lg:w-[360px] h-[320px] sm:h-[380px] bg-teal-100/70 rounded-t-full -z-0" />
             <img
-              src="/women_of_strength_️__ambassadors_of_hope-removebg-preview.png"
+              src="/Women_of_Strength_️__Ambassadors_of_Hope-removebg-preview.png"
               alt="Docteur Docpat"
               className="relative z-10 w-[260px] sm:w-[340px] lg:w-[460px] object-contain drop-shadow-xl"
             />
